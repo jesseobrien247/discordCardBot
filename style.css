@@ -1,0 +1,61 @@
+#playingField {
+    grid-template-columns: 2fr 6fr 6fr 6fr 2fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    display: grid;
+    height: 100vh;
+    background-color: green;
+}
+
+#sidebarLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#sidebarRight {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#player1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+div {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#player1, #player2, #player3, #player4, #player5, #player6, #middleArea {
+    background-color: lightblue;
+}
+
+body, h1, p {
+    margin: 0;
+}
+
+#playingField > div > div {
+    height: calc(50% - 10px);
+    border: none;
+}
+
+img {
+    height: 80px;
+    width: auto;
+    padding-right: 10px;
+}
+
+#stockPile, #discardPile {
+    width: calc(50% - 10px);
+    float: left;
+}
+
+#middleArea {
+    width: calc(100% - 10px);
+}
